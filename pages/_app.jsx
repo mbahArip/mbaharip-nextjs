@@ -8,7 +8,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFacebook, faTwitter, faGithub, faArtstation, faDiscord, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faBars, faTimes, faSearch } from '@fortawesome/free-solid-svg-icons';
 import Loading from '../components/Loading';
-import firebase from '../utils/firebase/clientApp';
+import app from '../utils/firebase/clientApp';
 import { DefaultSeo } from 'next-seo';
 
 library.add(faFacebook, faTwitter, faGithub, faArtstation, faDiscord, faInstagram, faBars, faTimes, faLinkedin, faSearch);
