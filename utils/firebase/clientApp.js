@@ -1,4 +1,4 @@
-import { initializeApp, getApps } from 'firebase/app';
+import firebase, { initializeApp, getApps } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
 
 const firebaseConfig = {
@@ -16,4 +16,4 @@ if (!getApps().length) {
 	// const analytics = getAnalytics(app);
 }
 
-export default app;
+export default firebase;
