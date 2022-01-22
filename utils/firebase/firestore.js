@@ -1,4 +1,3 @@
-import firebase from './clientApp';
 import { collection, doc, getDoc, getDocs, setDoc, getFirestore, deleteDoc, addDoc, orderBy, limit, query, where } from 'firebase/firestore';
 
 const contextDatabase = getFirestore();
