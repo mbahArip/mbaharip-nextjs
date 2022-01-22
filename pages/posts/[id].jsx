@@ -1,17 +1,16 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 
 import Divider from '../../components/Divider';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
 
-import { useHorizontalScroll } from '../../components/hooks/useHorizontalScroll';
+import { useHorizontalScroll } from '../../utils/hooks/useHorizontalScroll';
 import Markdown from '../../components/Markdown';
 import PostCard from '../../components/PostCard';
-import BlogCard from '../../components/BlogCard';
 
 import * as firestore from '../../utils/firebase/firestore';
-import { NextSeo } from 'next-seo';
 
 export async function getServerSideProps(context) {
 	const { id } = context.params;

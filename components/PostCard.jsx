@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { useHorizontalScroll } from './hooks/useHorizontalScroll';
+import { useHorizontalScroll } from '../utils/hooks/useHorizontalScroll';
 
 const PostCard = ({ Data }) => {
 	Data.title = Data.title[0].toUpperCase() + Data.title.substring(1);

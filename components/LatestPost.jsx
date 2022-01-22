@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useHorizontalScroll } from '../components/hooks/useHorizontalScroll';
+import { useHorizontalScroll } from '../utils/hooks/useHorizontalScroll';
 
 const LatestPost = ({ Data }) => {
 	Data.title = Data.title[0].toUpperCase() + Data.title.substring(1);

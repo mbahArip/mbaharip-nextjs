@@ -6,7 +6,6 @@ import Footer from '../components/Footer';
 import Divider from '../components/Divider';
 import Button from '../components/Button';
 import Slider from 'react-slick';
-import slider from 'react-slick/lib/slider';
 import { NextSeo } from 'next-seo';
 
 const Services = () => {
