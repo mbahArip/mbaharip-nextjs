@@ -1,56 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kosugi&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Zen+Antique+Soft&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @font-face {
-	font-family: 'LOF Nexus 6';
-	src: url('../public/fonts/Nexus_6-Regular.woff2') format('woff2'), url('../public/fonts/Nexus_6-Regular.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
+  font-family: "LOF Nexus 6";
+  src: url("../public/fonts/Nexus_6-Regular.woff2") format("woff2"),
+  url("../public/fonts/Nexus_6-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+@font-face {
+  font-family: "ORIENTICA";
+  src: url("../public/fonts/ORIENTICA-Regular.woff2") format("woff2"),
+  url("../public/fonts/ORIENTICA-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  * {
+    @apply tracking-wider;
+  }
+  .font-nexus, .font-mono, .font-serif {
+    @apply tracking-normal !important;
+  }
+
+  input,
+  button,
+  select,
+  option {
+    @apply outline-none focus:outline-none;
+  }
+
+  hr {
+    @apply border-main-light-dark w-full my-2;
+  }
+}
+
+/*
+  TYPOGRAPHY
+*/
+@layer components {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+  h1 {
+    @apply my-8 text-6xl;
+  }
+  h2 {
+    @apply my-6 text-5xl;
+  }
+  h3 {
+    @apply my-4 text-4xl;
+  }
+  h4 {
+    @apply my-2 text-3xl;
+  }
+  h5 {
+    @apply text-2xl;
+  }
+  h6 {
+    @apply text-xl;
+  }
+}
+
 
 html,
 body {
-	padding: 0;
-	margin: 0;
-}
-
-a {
-	color: inherit;
-	text-decoration: none;
-}
-
-* {
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
-	display: block;
-	width: 0.5rem;
-	height: 0.125rem;
+  display: block;
+  width: 0.5rem;
+  height: 0.25rem;
 }
 
 ::-webkit-scrollbar-button {
-	display: none;
+  display: none;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #c2c2c2;
-	border-radius: 0.25rem;
+  background: #c2c2c2;
+  border-radius: 0.25rem;
 }
 ::-webkit-scrollbar-thumb:horizontal {
-	background: #c2c2c2;
-	border-radius: 0.25rem;
+  background: #c2c2c2;
+  border-radius: 0.25rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: #374151;
+  background: #374151;
 }
 ::-webkit-scrollbar-thumb:horizontal:hover {
-	background: #374151;
+  background: #374151;
 }
 
 ::-webkit-scrollbar-track {
-	background: #171717;
+  background: #171717;
+}
+
+progress::-webkit-progress-value {
+  background-color: #f2f2f2;
+}
+progress::-webkit-progress-bar {
+  background-color: #262626;
 }
